@@ -1,0 +1,18 @@
+.category-container {
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.category-container h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+    .category-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

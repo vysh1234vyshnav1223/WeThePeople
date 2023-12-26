@@ -1,0 +1,168 @@
+
+.project-details-container{
+    margin-top: 40px;
+}
+
+.project-intro-details{
+    text-align: center;
+}
+
+.project-intro-details h1{
+    font-size: 36px;
+}
+
+.project-intro-details p{
+    font-size: 20px;
+}
+
+
+.project-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 0px 40px;
+    height: 650px;
+  }
+
+
+.project-details-image img{
+    max-width: 100%; 
+    height: auto; 
+    max-height: 400px; 
+    object-fit: contain;
+    display: block; 
+    margin: 0 auto;
+}
+
+.project-details-left {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.project-details-category{ 
+   display: flex;
+   gap: 7px; 
+   margin-left: 20px;
+   font-weight: 500;
+}
+
+.project-details-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.project-funding-details {
+    padding: 30px;
+}
+
+.project-funding-details h2{
+    font-size: 28px;
+    color: #66EE58;
+    font-weight: bold;
+}
+
+.project-funding-details p{
+    font-size: 16px;
+    color: #808080;
+    line-height: 10px;
+}
+
+.project-more-details{
+    padding: 0 30px 30px 30px;
+    
+}
+
+.project-backer-details, .project-duration-details{
+    margin-bottom: 30px;
+}
+
+.project-backer-details h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.project-backer-details p{
+    font-size: 16px;
+    color: #808080;
+    line-height: 10px;
+
+}
+
+.project-duration-details h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.project-duration-details p{
+    font-size: 16px;
+    color: #808080;
+    line-height: 10px;
+
+}
+
+.back-project-button{
+    background-color: #66EE78;
+    color: #000;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    width: 400px;
+    height: 50px;
+}
+
+.back-project-button:hover{
+    background-color: #fff;
+    border: 1px solid #66EE78;
+    color: #000;
+}
+
+
+.project-options-row{
+    border-top: 1px solid #808080;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+
+.project-options-row button{
+    padding: 10px 10px 5px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.active-button{
+    border-bottom: 2px solid #66EE78;
+    padding-top: 5px;
+}
+
+#completionPercentage {
+    appearance: none;
+    width: 100%;
+    height: 15px;
+  }
+  
+#completionPercentage::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 20px;
+}
+  
+#completionPercentage::-webkit-progress-value {
+    background-color: #66FE78;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .project-details{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+
+    .project-details-left, .project-details-right{
+        width: 100%;
+    }
+
+}

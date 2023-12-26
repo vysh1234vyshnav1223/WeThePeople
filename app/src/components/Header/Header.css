@@ -1,0 +1,206 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  max-width: 100vw;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #66EE78;
+  text-decoration: none;
+}
+
+.header-logo svg {
+  width: 60px;
+  height: 60px;
+
+}
+
+.header-container .title {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+
+
+.header-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover-text {
+  color: #000;
+  transition: color 0.3s ease-in-out;
+  margin-right: 70px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.discover-text:hover {
+  color: #66EE78;
+}
+
+.loginIcon-container {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  gap: 2px;
+  border: 1px solid #66EE78;
+  border-radius: 40px;
+  padding: 12px;
+}
+
+.loginIcon-container .loginIcon-lines {
+  width: 24px;
+  height: 24px;
+  color: #66EE78;
+}
+
+.loginIcon-background {
+  background-color: #66EE78;
+  border: 1px solid #66EE78;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.loginIcon-background svg {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 1px;
+  color: #fff;
+}
+
+.login-button {
+  transition: ease-in-out 0.3s;
+  width: 100px;
+  gap: 8px;
+  border: 1px solid #66EE78;
+  border-radius: 40px;
+  padding: 8px 16px;
+  color: #000;
+  font-weight: 300;
+}
+
+.login-button:hover {
+  background-color: #66EE78;
+  border: 1px solid #fff;
+  transform: translateY(-1px) scale(1.1);
+  color: #000;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .header-options {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    justify-self: flex-end;
+  }
+
+  .bar {
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hamburger-icon .bar.clicked:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hamburger-icon .bar.clicked:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .hamburger-icon .bar.clicked:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+  .header-left-section {
+    margin: 0 0px;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .SearchBar {
+    flex: 1;
+  }
+
+  .header-container .title {
+    font-size: medium;
+  }
+
+  .header-logo svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .options-container {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .options-container>* {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #66EE78
+  }
+
+  .options-container>*:last-child {
+    /* border-bottom: none; */
+    padding-bottom: 0;
+  }
+
+  .login-button {
+    border: none;
+    border-radius: 0;
+    transition: none;
+    padding: 10px 0;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .login-button:hover {
+    background-color: transparent;
+    border: 0px;
+    transform: none;
+    color: #000;
+    color: #66EE78;
+  }
+
+  .loginIcon-container {
+    margin-top: 10px;
+  }
+
+  .loginIcon-background {
+    margin-bottom: 10px;
+  }
+}

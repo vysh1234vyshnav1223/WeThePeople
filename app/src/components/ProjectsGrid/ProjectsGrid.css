@@ -1,0 +1,45 @@
+.projects-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 0.5px solid #F0F0F0;
+}
+
+.projects-section h2 {
+  font-size: 24px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.project img {
+  width: 100%;
+  height: 180px;
+  border-radius: 30px;
+}
+
+.projects-container h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.projects-container p {
+  font-size: 0.9rem;
+  color: #808080;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px
+  }
+
+  .project img {
+    width: 100%;
+  }
+}

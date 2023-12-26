@@ -1,0 +1,30 @@
+body {
+    overflow-x: hidden;
+}
+
+.homepage-container {
+    margin: 40px 40px;
+}
+
+.homepage-heading h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.homepage-heading span {
+    color: #66EE78;
+    font-weight: bold;
+}
+
+.homepage-heading p {
+    font-size: 16px;
+    color: #808080;
+    text-align: center;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .homepage-container {
+        margin: 40px 20px;
+    }
+}

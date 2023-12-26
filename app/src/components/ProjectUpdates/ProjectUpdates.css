@@ -1,0 +1,55 @@
+.project-updates-container {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 40px;
+    border-left: 2px solid #66EE78;
+    border-right: 2px solid #66EE78;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.no-updates-message {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 80px;
+}
+
+.no-updates-message p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.project-update {
+    border: 2px solid #66EE78;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.project-update h2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.project-update-user {
+    font-size: 14px;
+    color: #808080;
+}
+
+.project-update-description {
+    border-top: 1px solid #000;
+    border-color: #808080;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-updates-container {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}

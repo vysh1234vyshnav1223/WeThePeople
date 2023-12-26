@@ -1,0 +1,144 @@
+.project-payment-container{
+    width:90%;
+    float: left;
+    margin: 20px 80px;
+    height: auto;
+}
+
+
+.project-payment-heading{
+    margin-bottom: 40px;
+}
+
+.project-payment-heading h4{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.project-payment-heading h3{
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.project-payment-heading span{
+    font-weight: 500;
+}
+
+.project-payment-heading p{
+    color: #808080;
+}
+
+.payment-box{
+    display: flex;
+}
+
+.pledge-payment-summary{
+    flex: 1;
+    margin-right: 70px;
+    box-sizing: border-box;
+    width: 600px;
+    border: 1px solid #f0f0f0;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.pledge-payment-summary:hover{
+    border: 1px solid #66EE78;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.pledge-payment-summary h4{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pledge-payment-summary p{
+    color:#808080;
+    margin-bottom: 20px;
+}
+
+.pledge-payment-summary h5{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.pledge-payment-summary span{
+    color: #808080;
+}
+
+.pledge-payment-card-details{
+    position: relative;
+    border: 1px solid #f0f0f0;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #f0f0f0;
+    padding: 40px;
+}
+
+.pledge-payment-card-details h2{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.pledge-payment-card-container label{
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.pledge-payment-card-container  input{
+    width: 100%;
+    padding: 8px 8px 8px 15px;
+    box-sizing: border-box;
+    border: 1px solid #66EE78;    
+    border-radius: 30px;
+    outline: none;
+}
+
+.pledge-submit-button{
+    margin-top: 10px;
+    background-color: #66EE78;
+    width: 100%;
+    color: #000;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.pledge-submit-button:hover{
+    background-color: #fff;
+    border: 1px solid #66EE78;
+    color: #000;
+}
+
+@media only screen and (max-width: 1000px){
+    .project-payment-container{
+        width: 80%;
+        margin: 10px 30px;
+    }
+
+    .payment-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pledge-payment-summary{
+        width: 400px;
+        margin: 10px 20px;
+    }
+
+    .pledge-payment-card-details{
+        width: 400px;
+        margin: 10px 20px;
+    }
+}

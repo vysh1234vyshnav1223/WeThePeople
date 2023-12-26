@@ -1,0 +1,41 @@
+.completion-projects {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 0.5px solid #66FE78;
+}
+
+.completion-projects h2 {
+  font-size: 24px;
+}
+
+.completion-projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.completion-projects-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.completion-projects-container h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.completion-projects-container p {
+  font-size: 0.9rem;
+  color: #808080;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .completion-projects-container {
+    width: 450px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

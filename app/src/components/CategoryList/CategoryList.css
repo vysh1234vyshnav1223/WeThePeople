@@ -1,0 +1,27 @@
+.categories {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.category-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.category-list li {
+  margin-right: 50px;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media only screen and (max-width: 800px) {
+  .category-list {
+    flex-wrap: wrap;
+  }
+
+  .category-list li {
+    margin-right: 20px;
+    padding: 6px;
+  }
+}

@@ -1,0 +1,24 @@
+.account-nav {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-option {
+  display: inline-flex;
+  padding: 8px 24px 8px 24px;
+  margin: 20px 20px;
+}
+
+.active {
+  background-color: #66EE78;
+  color: #000;
+  border-radius: 30px;
+}
+
+.inactive {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #66EE78;
+  border-radius: 30px;
+}

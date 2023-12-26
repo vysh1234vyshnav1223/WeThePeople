@@ -1,0 +1,84 @@
+.backed-projects-heading {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.backed-project-container {
+    display: flex;
+    margin: 30px;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+
+.backed-image-container {
+    display: flex;
+    margin-right: 20px;
+}
+
+.backed-image-container img {
+    border-radius: 20px;
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.backed-project-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.backed-project-description {
+    margin-top: 10px;
+}
+
+.backed-project-goal {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.backed-project-amount {
+    margin: 20px 0;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #66EE78;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.no-backed-projects-message {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 90px;
+    margin: 20px 0;
+}
+
+.no-backed-projects-message p {
+    color: #808080;
+}
+
+.no-backed-projects-message h3 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 800px) {
+    .backed-image-container img {
+        width: 1000px;
+        height: 200px;
+    }
+
+    .backed-project-amount {
+        font-size: 16px;
+        text-align: left;
+        width: 200px;
+    }
+}

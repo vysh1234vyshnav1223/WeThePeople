@@ -1,0 +1,81 @@
+.pledge-project-rewards-container {
+    width: 60%;
+    float: left;
+    margin: 0 80px;
+}
+
+
+.pledge-project-rewards-heading {
+    margin-bottom: 40px;
+}
+
+.pledge-project-rewards-heading h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.pledge-project-rewards-heading h3 {
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.pledge-project-rewards-heading span {
+    font-weight: 500;
+}
+
+.pledge-project-rewards-heading p {
+    color: #808080;
+}
+
+.pledge-project-rewards {
+    box-sizing: border-box;
+    width: 700px;
+    height: 400px;
+    border: 1px solid #f0f0f0;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.pledge-project-rewards:hover {
+    border: 1px solid #66EE78;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.pledge-project-rewards h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pledge-project-rewards p {
+    color: #808080;
+    margin-bottom: 20px;
+}
+
+.pledge-project-rewards h5 {
+    font-size: 16px;
+}
+
+.pledge-project-rewards span {
+    color: #808080;
+}
+
+.pledge-project-rewards button {
+    transition: ease-in-out 0.3s;
+    display: inline-flex;
+    background-color: #66EE78;
+    color: #000;
+    margin-top: 40px;
+    padding: 10px 15px 10px 20px;
+    border-radius: 30px;
+}
+
+.pledge-project-rewards button:hover {
+    background-color: #fff;
+    border: 1px solid #66EE78;
+
+}
