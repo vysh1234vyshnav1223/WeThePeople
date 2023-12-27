@@ -37,7 +37,7 @@ export default function ProjectRewards({ projectDetails }) {
                 <button onClick={handleButtonClick}>Pledge</button>
               </div>
             </div>
-          ))}
+          ))};
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ export default function ProjectPledgeContainer({ onPledgeClick, rewards }) {
                     <h5>Estimated Delivery: <br /><span>{reward.estimatedDelivery} days</span></h5>
                     <button onClick={() => handlePledgeClick(reward)}>Pledge US$ {reward.minimumPledge}</button>
                 </div>
-            ))}
+            ))};
         </div>
     )
 }

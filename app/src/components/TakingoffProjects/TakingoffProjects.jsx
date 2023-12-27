@@ -13,8 +13,8 @@ export default function TakingoffProjects({ projects }){
                 <p>{project.description.substring(0,100)+'...'}</p>
                 <p>By {project.creator.name}</p>
             </Link>
-            ))}
+            ))};
         </div>
     </div>
     )
-}
+};

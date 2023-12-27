@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
-import './UserProfile.css'
+import './UserProfile.css';
 import AccountNav from '../../components/AccountNav/AccountNav';
 import Layout from '../../components/Layout/Layout';
 import axios from 'axios';
@@ -48,7 +48,7 @@ export default function UserProfile() {
         } catch (error) {
             console.error('Error Logging out:', error);
         }
-    }
+    };
 
     const handleSubmit = async (ev) => {
         ev.preventDefault();
@@ -62,7 +62,7 @@ export default function UserProfile() {
         } catch (error) {
             console.error('Error updating user details:', error);
         }
-    }
+    };
 
 
     const handleOpenPasswordReset = () => {
@@ -72,7 +72,7 @@ export default function UserProfile() {
 
     if (redirect) {
         return <Navigate to={'/'} />
-    }
+    };
 
     return (
         <div>
@@ -131,4 +131,4 @@ export default function UserProfile() {
             </Layout>
         </div>
     )
-}
+};

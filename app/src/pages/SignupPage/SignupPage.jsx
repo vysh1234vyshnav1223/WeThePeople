@@ -1,6 +1,6 @@
-import './SignupPage.css'
-import { Link, Navigate } from 'react-router-dom'
-import Layout from '../../components/Layout/Layout'
+import './SignupPage.css';
+import { Link, Navigate } from 'react-router-dom';
+import Layout from '../../components/Layout/Layout';
 import { useState } from 'react';
 import axios from 'axios';
 import LoadingIcon from '../../components/LoadingIcon/LoadingIcon';
@@ -59,5 +59,5 @@ export default function LoginPage() {
             </Layout>
         </div>
     )
-}
+};
 

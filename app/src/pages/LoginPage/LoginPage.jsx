@@ -59,11 +59,10 @@ export default function LoginPage() {
 
 
                         </div>
-                    )}
+                    )};
                 </div>
             </Layout>
         </div>
     )
-}
-
+};
 

@@ -69,10 +69,10 @@ export default function BackedProjects() {
                 </ul>
               )}
             </>
-          )}
+          )};
 
         </div>
       </Layout>
     </div>
-  );
-}
+  )
+};

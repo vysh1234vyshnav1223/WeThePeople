@@ -62,10 +62,10 @@ export default function HomePage() {
 
                             <CategoryList />
                         </>
-                    )}
+                    )};
 
                 </div>
             </Layout>
         </div>
     )
-}
+};

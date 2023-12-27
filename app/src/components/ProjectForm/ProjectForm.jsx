@@ -102,11 +102,11 @@ export default function ProjectForm() {
         } catch (error) {
             toast.error(error.response.data.error || 'Unexpected error occurred. Try again later');
         }
-    }
+    };
 
     if (redirect) {
         return <Navigate to={'/projects'} />
-    }
+    };
 
     return (
         <div className='form-container'>

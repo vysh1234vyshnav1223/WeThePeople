@@ -22,4 +22,4 @@ exports.validateLogin = [
         }
         next();
     }
-]
+];

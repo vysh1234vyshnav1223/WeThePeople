@@ -74,7 +74,7 @@ exports.signup = async (req, res) => {
         console.error(error);
         res.status(402).json({ error: 'Unexpected error occurred. Try again later' });
     }
-}
+};
 
 exports.login = async (req, res) => {
     try {
@@ -96,7 +96,7 @@ exports.login = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
+};
 
 exports.logout = async (req, res) => {
     try {
@@ -104,7 +104,7 @@ exports.logout = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
+};
 
 exports.getUserDetails = async (req, res) => {
     try {
@@ -114,7 +114,7 @@ exports.getUserDetails = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
+};
 
 
 exports.editUserDetails = async (req, res) => {
@@ -135,8 +135,7 @@ exports.editUserDetails = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
-
+};
 
 
 exports.changeUserPassword = async (req, res) => {
@@ -171,7 +170,7 @@ exports.changeUserPassword = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
+};
 
 exports.getUserProjects = async (req, res) => {
     try {
@@ -181,7 +180,7 @@ exports.getUserProjects = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
+};
 
 exports.getBackedProjects = async (req, res) => {
     try {
@@ -206,4 +205,4 @@ exports.getBackedProjects = async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 
-}
+};

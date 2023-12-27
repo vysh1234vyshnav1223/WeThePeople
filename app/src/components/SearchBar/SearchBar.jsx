@@ -45,12 +45,12 @@ export default function SearchBar() {
                                         <span className='suggestion-title'>{suggestion.title}</span>
                                     </li>
                                     </Link>
-                                ))}
+                                ))};
                             </ul>
                         )}
                     </ul>
                 </div>
-            )}
+            )};
         </div>
     )
 }

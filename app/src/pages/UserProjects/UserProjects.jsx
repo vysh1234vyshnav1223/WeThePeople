@@ -23,7 +23,7 @@ export default function UserProjects() {
 
     const handleOpenProjectUpdate = (projectId) => {
         setOpenProjectUpdateId(projectId);
-    }
+    };
 
 
     return (
@@ -84,5 +84,5 @@ export default function UserProjects() {
                 </div>
             </Layout>
         </div>
-    );
-}
+    )
+};

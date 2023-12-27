@@ -15,4 +15,4 @@ exports.uploadFiles = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
+};

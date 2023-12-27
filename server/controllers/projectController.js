@@ -17,7 +17,7 @@ exports.getProjectById = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
+};
 
 exports.createProject = async (req, res) => {
     try {
@@ -43,7 +43,7 @@ exports.createProject = async (req, res) => {
         console.log(error);
         res.status(500).json({ error: `Unexpected error occurred.Please Try again` });
     }
-}
+};
 
 exports.editProject = async (req, res) => {
     try {
@@ -63,7 +63,7 @@ exports.editProject = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
+};
 
 exports.deleteProject = async (req, res) => {
     const projectId = req.params.id;
@@ -83,7 +83,7 @@ exports.deleteProject = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
     }
-}
+};
 
 exports.addProjectUpdates = async (req, res) => {
     const { projectId } = req.params;
@@ -99,7 +99,7 @@ exports.addProjectUpdates = async (req, res) => {
         project.updates.push({
             title,
             message
-        })
+        });
 
         await project.save();
         res.json({ projectId, updates: project.updates });
@@ -107,7 +107,7 @@ exports.addProjectUpdates = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal Server Error' });
     }
-}
+};
 
 
 exports.pledgeProject = async (req, res) => {
@@ -169,7 +169,7 @@ function calculateCompletionPercentage(currentFunding, fundingGoal) {
 
     const completionPercentage = (currentFunding / fundingGoal) * 100;
     return Math.min(completionPercentage, 100);
-}
+};
 
 exports.getAllProjects = async (req, res) => {
     try {
@@ -182,7 +182,7 @@ exports.getAllProjects = async (req, res) => {
         console.error('Error Fetching Details:', error.message);
         res.status(500).json({ error });
     }
-}
+};
 
 exports.getCategoryProjects = async (req, res) => {
     try {
@@ -194,5 +194,5 @@ exports.getCategoryProjects = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Internal Server Error' });
     }
-}
+};
 

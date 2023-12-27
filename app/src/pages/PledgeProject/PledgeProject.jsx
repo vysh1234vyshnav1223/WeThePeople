@@ -7,7 +7,7 @@ import { useLocation, useParams } from 'react-router-dom';
 
 
 export default function PledgeProject() {
-    const { id } = useParams()
+    const { id } = useParams();
     const location = useLocation();
     const {state} = location;
     const [showPaymentComponent, setshowPaymentComponent] = useState(false);
@@ -52,10 +52,10 @@ export default function PledgeProject() {
                         </div>
                     </div>
 
-                )}
+                )};
 
             </div>
             </Layout>
         </div>
     )
-}
+};

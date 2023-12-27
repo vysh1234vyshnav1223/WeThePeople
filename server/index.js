@@ -3,6 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 require('dotenv').config()
+const path = require('path');
 const userRoutes = require('./routes/userRoutes');
 const projectRoutes = require('./routes/projectRoutes.js');
 const uploadRoutes = require('./routes/uploadRoutes.js');
@@ -14,6 +15,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public/assets/build')));
 app.use('/uploads', express.static(__dirname + '/uploads'))
 app.use(cors({
     credentials: true,
@@ -31,6 +33,9 @@ app.use('/api/upload', uploadRoutes);
 
 app.use('/autocomplete', autocompleteRoutes);
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/assets/build', 'index.html'));
+  });
 
 
 app.listen(4000, () => {

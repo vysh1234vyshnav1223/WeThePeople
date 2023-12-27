@@ -54,7 +54,7 @@ export default function ProjectPage({ }) {
     }
 
     const handlePledgeButtonClick = () => {
-        navigate('/project/pledge/' + id, { state: { projectDetails: projectDetails } })
+        navigate('/project/pledge/' + id, { state: { projectDetails: projectDetails } });
     }
 
     const calculateRemainingDays = () => {
@@ -136,4 +136,4 @@ export default function ProjectPage({ }) {
             </Layout>
         </div>
     )
-}
+};

@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import './AccountNav.css'
+import './AccountNav.css';
 
 export default function AccountNav() {
 
