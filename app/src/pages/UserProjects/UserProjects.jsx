@@ -3,7 +3,7 @@ import Layout from '../../components/Layout/Layout';
 import AccountNav from '../../components/AccountNav/AccountNav';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ProjectUpdates from '../../components/CreateProjectUpdates/CreateProjectUpdates';
 import LoadingIcon from '../../components/LoadingIcon/LoadingIcon';
 
