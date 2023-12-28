@@ -12,15 +12,16 @@ const autocompleteRoutes = require('./routes/autoCompleteRoutes.js');
 
 const app = express();
 
+app.use(cors({
+    credentials: true,
+    origin: 'http://localhost:3000',
+}))
+
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public/assets/build')));
 app.use('/uploads', express.static(__dirname + '/uploads'))
-app.use(cors({
-    credentials: true,
-    origin: 'http://localhost:3000',
-}))
 
 mongoose.connect(process.env.MONGO_URL);
 
