@@ -14,7 +14,7 @@ const app = express();
 
 app.use(cors({
     credentials: true,
-    origin: 'https://658e71ab73b21679d2441d70--iridescent-lollipop-cb44d2.netlify.app',
+    origin: 'https://658e7893929bea823985f696--jovial-blini-5c2e16.netlify.app',
 }))
 
 
