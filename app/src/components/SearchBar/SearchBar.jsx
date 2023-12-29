@@ -41,7 +41,7 @@ export default function SearchBar() {
                                 {suggestions.map((suggestion) => (
                                     <Link to={`/project/${suggestion._id}`}>
                                     <li key={suggestion._id}  className='suggestion-item'>
-                                        <img src={`http://localhost:4000/uploads/${suggestion.images[0]}`} alt={suggestion.title} className='suggestion-image' />
+                                        <img src={`https://wethepeople-project.onrender.com/uploads/${suggestion.images[0]}`} alt={suggestion.title} className='suggestion-image' />
                                         <span className='suggestion-title'>{suggestion.title}</span>
                                     </li>
                                     </Link>

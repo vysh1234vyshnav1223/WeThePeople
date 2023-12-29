@@ -11,7 +11,7 @@ export default function FeaturedSection({ projects }) {
             <div className='featured-section-left'>
                 <h2 className='featured-section-heading'>Featured Project</h2>
                 <Link to={`/project/${projects[0]._id}`} className='featured-project-container'>
-                    <img src={`http://localhost:4000/uploads//${projects[0].images[0]}`} />
+                    <img src={`https://wethepeople-project.onrender.com/uploads//${projects[0].images[0]}`} />
                     <h2 className='featured-project-title'>{projects[0].title}</h2>
                     <p className='featured-project-description'>{projects[0].description.substring(0, 240) + '...'}</p>
                     <h3 className='featured-project-backers'>{projects[0].backersCount} Backers</h3>
@@ -25,7 +25,7 @@ export default function FeaturedSection({ projects }) {
                 {projects.slice(1, 5).map(project => (
                     <Link to={`/project/${project._id}`} key={project._id} className='featured-projects'>
                         <div className='featured-projects-image-container'>
-                            <img src={`http://localhost:4000/uploads//${project.images[0]}`} />
+                            <img src={`https://wethepeople-project.onrender.com/uploads//${project.images[0]}`} />
                         </div>
                         <div className='featured-projects-details'>
                             <h2>{project.title}</h2>

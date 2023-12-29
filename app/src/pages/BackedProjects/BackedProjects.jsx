@@ -54,7 +54,7 @@ export default function BackedProjects() {
                     <div key={backedProject.project._id}>
                       <Link to={`/project/${backedProject.project._id}`} className='backed-project-container'>
                         <div className='backed-image-container'>
-                          <img src={`http://localhost:4000/uploads/${backedProject.project.images[0]}`} alt='' />
+                          <img src={`https://wethepeople-project.onrender.com/uploads/${backedProject.project.images[0]}`} alt='' />
                         </div>
                         <div>
                           <h2 className='backed-project-title'>{backedProject.project.title}</h2>

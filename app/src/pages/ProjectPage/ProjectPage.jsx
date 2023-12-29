@@ -91,7 +91,7 @@ export default function ProjectPage({ }) {
                                     <Carousel>
                                         {projectDetails.images.map((imageUrl, index) => (
                                             <div key={index} className='project-details-image'>
-                                                <img src={'http://localhost:4000/uploads/' + imageUrl} alt={`Project image ${index + 1}`} />
+                                                <img src={'https://wethepeople-project.onrender.com/uploads/' + imageUrl} alt={`Project image ${index + 1}`} />
                                             </div>
                                         ))}
                                     </Carousel>

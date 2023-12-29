@@ -9,7 +9,7 @@ export default function ProjectsGrid({ projects, category }) {
             <div className='projects-container'>
                 {projects.map(project => (
                     <Link to={`/project/${project._id}`} key={project._id} className='project'>
-                    <img src={`http://localhost:4000/uploads//${project.images[0]}`} alt='' />
+                    <img src={`https://wethepeople-project.onrender.com/uploads//${project.images[0]}`} alt='' />
                     <h3>{project.title}</h3>
                     <p> {project.description.substring(0,100)+'...'}</p>
                     <p>By {project.creator.name}</p>

@@ -85,7 +85,7 @@ exports.login = async (req, res) => {
             if (passwordMatch) {
                 jwt.sign({ email: user.email, id: user._id }, process.env.JWT_SECRET, {}, (err, token) => {
                     if (err) throw err;
-                    res.cookie('token', token, { httpOnly: true }).json(user);
+                    res.cookie('token', token, { httpOnly: true, secure: true, samesite: 'none' }).json (user);
                 });
             } else {
                 res.status(422).json({ error: `Password doesn't match. Kindly check it once again` });

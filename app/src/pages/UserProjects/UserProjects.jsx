@@ -47,7 +47,7 @@ export default function UserProjects() {
                                 <div key={project._id}>
                                     <Link to={'/project/' + project._id} className='project-container'>
                                         <div className='image-container'>
-                                            <img src={'http://localhost:4000/uploads/' + project.images[0]} alt='' />
+                                            <img src={'https://wethepeople-project.onrender.com/uploads/' + project.images[0]} alt='' />
                                         </div>
                                         <div className='project-details-section'>
                                             <h2 className='project-title'>{project.title}</h2>
