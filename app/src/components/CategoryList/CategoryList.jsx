@@ -14,7 +14,7 @@ function CategoryList() {
         ))}
       </ul>
     </div>
-  );
+  )
 }
 
 export default CategoryList;

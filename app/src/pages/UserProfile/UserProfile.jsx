@@ -131,4 +131,4 @@ export default function UserProfile() {
             </Layout>
         </div>
     )
-};
+}

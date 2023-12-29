@@ -52,7 +52,7 @@ export default function PledgeProject() {
                         </div>
                     </div>
 
-                )};
+                )}
 
             </div>
             </Layout>

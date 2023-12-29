@@ -63,5 +63,5 @@ export default function ImagesUploader({ addedImages, onChange }) {
                 </label>
             </div>
         </>
-    );
+    )
 }

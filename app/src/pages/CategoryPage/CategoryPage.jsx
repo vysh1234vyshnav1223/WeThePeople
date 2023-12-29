@@ -53,7 +53,7 @@ function CategoryPage() {
                 </div>
             </Layout>
         </div>
-    );
+    )
 }
 
 export default CategoryPage;

@@ -68,4 +68,4 @@ export default function HomePage() {
             </Layout>
         </div>
     )
-};
+}

@@ -35,5 +35,5 @@ export default function AccountNav() {
                 </Link>
             </nav>
         </div>
-    );
+    )
 }

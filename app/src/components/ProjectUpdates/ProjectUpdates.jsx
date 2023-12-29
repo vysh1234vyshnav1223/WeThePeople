@@ -26,5 +26,5 @@ export default function ProjectUpdates({ updates }) {
                 </div>
             )}
         </div>
-    );
+    )
 }

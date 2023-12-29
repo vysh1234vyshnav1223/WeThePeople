@@ -13,5 +13,5 @@ export default function CreateProject() {
             </div>
             </Layout>
         </div>
-    );
-};
+    )
+}
