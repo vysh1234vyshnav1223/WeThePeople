@@ -15,7 +15,7 @@ import CategoryPage from './pages/CategoryPage/CategoryPage.jsx';
 import ProtectedRoute from './ProtectedRoute.js';
 import { AuthContextProvider } from './context/AuthContext.js';
 
-axios.defaults.baseURL = 'http://35.154.82.244:4000';
+axios.defaults.baseURL = 'http://localhost:4000';
 axios.defaults.withCredentials = true;
 
 function App() {
